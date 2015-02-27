@@ -11,6 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150227210345) do
+
+  create_table "requests", force: true do |t|
+    t.string   "remote_ip"
+    t.string   "request_method"
+    t.string   "scheme"
+    t.string   "query_string"
+    t.binary   "query_params"
+    t.binary   "cookies"
+    t.binary   "headers"
+    t.integer  "trap_id_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "requests", ["trap_id_id"], name: "index_requests_on_trap_id_id", using: :btree
+
+  create_table "traps", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
