@@ -5,6 +5,5 @@
 dispatcher = new WebSocketRails(window.document.location.host + '/websocket')
 channel = dispatcher.subscribe('test')
 channel.bind('new', ((test) ->
-    alert(test)
   )
 )
