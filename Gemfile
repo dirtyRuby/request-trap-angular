@@ -28,10 +28,12 @@ gem 'angularjs-rails'
 gem 'bootstrap-sass-rails'
 gem 'autoprefixer-rails'
 gem 'sass'
-gem 'puma'
+gem 'thin'
 ruby '2.1.5'
 gem 'pg'
 gem 'mysql2'
+gem 'rails_12factor'
+gem 'websocket-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -16,5 +16,6 @@
 //= require bootstrap
 //= require bootstrap/modal
 //= require angular
+//= require websocket_rails/main
 //= require_tree .
 
