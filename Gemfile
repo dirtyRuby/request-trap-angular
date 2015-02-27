@@ -30,6 +30,9 @@ gem 'bootstrap-sass-rails'
 gem 'autoprefixer-rails'
 gem 'sass'
 gem 'puma'
+ruby '2.1.5'
+gem 'pg'
+gem 'mysql2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
